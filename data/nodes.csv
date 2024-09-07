@@ -1,0 +1,28 @@
+id,name,state,acronym,type,latitude,longitude,population
+rio_branco,Rio Branco,Acre,AC,Capital,-9.974,-67.8076,364756
+maceio,Maceió,Alagoas,AL,Capital,-9.66625,-35.7351,957916
+macapa,Macapá,Amapá,AP,Capital,0.0344566,-51.0666,442933
+manaus,Manaus,Amazonas,AM,Capital,-3.10719,-60.0261,2302000
+salvador,Salvador,Bahia,BA,Capital,-12.9704,-38.5124,2418000
+fortaleza,Fortaleza,Ceará,CE,Capital,-3.71839,-38.5434,2429000
+brasilia,Brasília,Distrito Federal,DF,Capital,-15.7801,-47.9292,2817381
+vitoria,Vitória,Espírito Santo,ES,Capital,-20.3222,-40.3381,322869
+goiania,Goiânia,Goiás,GO,Capital,-16.6799,-49.255,1437366
+sao_luis,São Luís,Maranhão,MA,Capital,-2.53073,-44.3068,1038000
+cuiaba,Cuiabá,Mato Grosso,MT,Capital,-15.5989,-56.0949,650912
+campo_grande,Campo Grande,Mato Grosso do Sul,MS,Capital,-20.4435,-54.6478,916001
+belo_horizonte,Belo Horizonte,Minas Gerais,MG,Capital,-19.912998,-43.940933,2316000
+belem,Belém,Pará,PA,Capital,-1.45502,-48.5024,1303000
+joao_pessoa,João Pessoa,Paraíba,PB,Capital,-7.11532,-34.861,833932
+curitiba,Curitiba,Paraná,PR,Capital,-25.4284,-49.2733,1773718
+recife,Recife,Pernambuco,PE,Capital,-8.05428,-34.8813,9059000
+teresina,Teresina,Piauí,PI,Capital,-5.08921,-42.8016,866300
+rio_de_janeiro,Rio de Janeiro,Rio de Janeiro,RJ,Capital,-22.908333,-43.196388,6211000
+natal,Natal,Rio Grande do Norte,RN,Capital,-5.79448,-35.211,751300
+porto_alegre,Porto Alegre,Rio Grande do Sul,RS,Capital,-30.033056,-51.230000,1332845
+porto_velho,Porto Velho,Rondônia,RO,Capital,-8.76183,-63.902,460413
+boa_vista,Boa Vista,Roraima,RR,Capital,2.81954,-60.6714,436591
+florianopolis,Florianópolis,Santa Catarina,SC,Capital,-27.593500,-48.558540,537211
+sao_paulo,São Paulo,São Paulo,SE,Capital,-23.5489,-46.6388,11450000
+aracaju,Aracaju,Sergipe,CE,Capital,-10.9095,-37.0748,602757
+palmas,Palmas,Tocantins,TO,Capital,-10.1689,-48.3317,302692
