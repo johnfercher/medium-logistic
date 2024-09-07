@@ -14,7 +14,15 @@
         :layouts="graph.layouts"
         :edges="graph.edges"
         :configs="configs"
-    />
+    >
+      <template #edge-label="{ edge, ...slotProps }">
+        <v-edge-label
+            :text="edge.label"
+            align="center"
+            vertical-align="above"
+            v-bind="slotProps" />
+      </template>
+    </v-network-graph>
   </div>
   <div v-if="graph === null">
     Loading...

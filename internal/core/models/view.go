@@ -20,8 +20,9 @@ type CityView struct {
 }
 
 type RoadView struct {
-	Source string
-	Target string
+	Source   string
+	Target   string
+	Distance int
 }
 
 type PathView struct {

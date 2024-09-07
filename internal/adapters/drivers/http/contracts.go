@@ -27,6 +27,7 @@ type Node struct {
 type Edge struct {
 	Source string `json:"source"`
 	Target string `json:"target"`
+	Label  string `json:"label"`
 }
 
 type Path struct {
@@ -60,6 +61,7 @@ func Map(graph *models.GraphView) *Graph {
 		response.Edges[fmt.Sprintf("edge%d", i)] = &Edge{
 			Source: road.Source,
 			Target: road.Target,
+			Label:  fmt.Sprintf("%d Km", road.Distance),
 		}
 	}
 

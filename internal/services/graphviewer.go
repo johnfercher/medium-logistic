@@ -52,8 +52,9 @@ func (g *GraphViewer) MapRoads(ctx context.Context, roads []*models.Road) []*mod
 	views := []*models.RoadView{}
 	for _, road := range roads {
 		edgeView := &models.RoadView{
-			Source: road.Source,
-			Target: road.Target,
+			Source:   road.Source,
+			Target:   road.Target,
+			Distance: road.Distance,
 		}
 		views = append(views, edgeView)
 	}

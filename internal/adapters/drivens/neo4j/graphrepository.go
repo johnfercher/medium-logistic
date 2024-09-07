@@ -54,8 +54,9 @@ func (g *GraphRepository) GetGraph(ctx context.Context) (*models.Graph, error) {
 			}
 
 			road := &models.Road{
-				Source: city.ID,
-				Target: node.Props["id"].(string),
+				Source:   city.ID,
+				Target:   node.Props["id"].(string),
+				Distance: int(path.Relationships[0].Props["distance_km"].(int64)),
 			}
 
 			roads[road.Key()] = road

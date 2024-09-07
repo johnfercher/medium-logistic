@@ -19,7 +19,7 @@ type City struct {
 type Road struct {
 	Source   string
 	Target   string
-	Distance float64
+	Distance int
 }
 
 func (r *Road) Key() string {
