@@ -2,9 +2,10 @@ package neo4j
 
 import (
 	"context"
+	"log"
+
 	"github.com/johnfercher/medium-logistic/internal/core/models"
 	"github.com/neo4j/neo4j-go-driver/v5/neo4j"
-	"log"
 )
 
 type GraphRepository struct {
@@ -22,7 +23,6 @@ func (g *GraphRepository) GetGraph(ctx context.Context) (*models.Graph, error) {
 		neo4j.EagerResultTransformer,
 		neo4j.ExecuteQueryWithReadersRouting(),
 		neo4j.ExecuteQueryWithDatabase(""))
-
 	if err != nil {
 		log.Fatal(err.Error())
 	}

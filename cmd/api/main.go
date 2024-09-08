@@ -1,31 +1,39 @@
 package main
 
 import (
+	"log"
+	"net/http"
+	"os"
+
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
 	neo4j2 "github.com/johnfercher/medium-logistic/internal/adapters/drivens/neo4j"
 	http2 "github.com/johnfercher/medium-logistic/internal/adapters/drivers/http"
 	"github.com/johnfercher/medium-logistic/internal/services"
-	"github.com/neo4j/neo4j-go-driver/v5/neo4j"
-	"log"
-	"net/http"
+	"github.com/johnfercher/medium-logistic/pkg/config"
+	"github.com/johnfercher/medium-logistic/pkg/neo4jdriver"
 )
 
 func main() {
-	driver, err := connectNeo4j()
+	cfg, err := config.Load(os.Args)
+	if err != nil {
+		panic(err)
+	}
+
+	driver, err := neo4jdriver.Start(cfg.Neo4j.URL, cfg.Neo4j.User, cfg.Neo4j.Password)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	repository := neo4j2.NewGraphRepository(driver)
 	graphViewer := services.NewGraphViewer(repository)
-
 	fullGraphReader := http2.NewFullGraphReader(graphViewer)
 
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
 
+	// To allow frontend call
 	r.Use(cors.Handler(cors.Options{
 		// AllowedOrigins:   []string{"https://foo.com"}, // Use this to allow specific origin hosts
 		AllowedOrigins: []string{"https://*", "http://*"},
@@ -39,14 +47,5 @@ func main() {
 
 	r.MethodFunc(fullGraphReader.Method(), fullGraphReader.Pattern(), fullGraphReader.Func)
 
-	http.ListenAndServe(":3000", r)
-}
-
-func connectNeo4j() (neo4j.DriverWithContext, error) {
-	conn, err := neo4j.NewDriverWithContext("bolt://localhost:7687", neo4j.BasicAuth("neo4j", "supersecret", ""))
-	if err != nil {
-		return nil, err
-	}
-
-	return conn, nil
+	_ = http.ListenAndServe(":8083", r)
 }

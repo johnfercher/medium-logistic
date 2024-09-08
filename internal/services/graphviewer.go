@@ -2,6 +2,7 @@ package services
 
 import (
 	"context"
+
 	"github.com/johnfercher/medium-logistic/internal/core/models"
 	"github.com/johnfercher/medium-logistic/internal/core/ports"
 )
@@ -28,6 +29,7 @@ func (g *GraphViewer) GetGraph(ctx context.Context) (*models.GraphView, error) {
 	return graphView, nil
 }
 
+// nolint:gomnd // design
 func (g *GraphViewer) MapCities(ctx context.Context, cities []*models.City) []*models.CityView {
 	views := []*models.CityView{}
 	for _, city := range cities {

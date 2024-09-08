@@ -1,8 +1,9 @@
 package http
 
 import (
-	"github.com/johnfercher/medium-logistic/internal/core/ports"
 	"net/http"
+
+	"github.com/johnfercher/medium-logistic/internal/core/ports"
 )
 
 type FullGraphReader struct {

@@ -2,6 +2,7 @@ package ports
 
 import (
 	"context"
+
 	"github.com/johnfercher/medium-logistic/internal/core/models"
 )
 

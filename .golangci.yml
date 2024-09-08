@@ -1,0 +1,46 @@
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+linters-settings:
+  lll:
+    line-length: 140
+  gocritic:
+    enabled-checks:
+      - boolExprSimplify
+      - commentedOutCode
+      - commentedOutImport
+      - dupImport
+      - stringXbytes
+      - whyNoLint
+
+linters:
+  disable-all: true
+  enable:
+    - bodyclose
+    - dogsled
+    - dupl
+    - errcheck
+    - godot
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - gofmt
+    - gofumpt
+    - goimports
+    - gomnd
+    - goprintffuncname
+    - govet
+    - gosimple
+    - ineffassign
+    - lll
+    - misspell
+    - nakedret
+    - rowserrcheck
+    - staticcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace

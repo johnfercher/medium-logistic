@@ -2,6 +2,7 @@ package http
 
 import (
 	"fmt"
+
 	"github.com/johnfercher/medium-logistic/internal/core/models"
 )
 

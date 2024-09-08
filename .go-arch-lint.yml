@@ -1,0 +1,73 @@
+version: 3
+
+allow:
+  deepScan: false
+
+excludeFiles:
+  - "^.*_test\\.go$"
+  - "^.*\/test\/.*$"
+  - "api.go"
+  - "internal/internal.go"
+  - "cmd/call/main.go"
+
+components:
+  models:           { in: internal/core/models/** }
+  ports:            { in: internal/core/ports/** }
+  drivers:          { in: internal/adapters/drivers/** }
+  drivens:          { in: internal/adapters/drivens/** }
+  services:         { in: internal/services/** }
+  cmdapi:           { in: cmd/api/** }
+  pkg:              { in: pkg/** }
+
+vendors:
+  assert:         { in: github.com/stretchr/testify/assert }
+  mock:           { in: github.com/stretchr/testify/mock }
+  uuid:           { in: github.com/google/uuid  }
+  chi:            { in: github.com/go-chi/** }
+  neo4j:          { in: github.com/neo4j/neo4j-go-driver/v5/neo4j }
+  yaml:           { in: gopkg.in/yaml.v2 }
+
+commonVendors:
+  - uuid
+  - assert
+  - mock
+
+deps:
+  ports:
+    mayDependOn:
+      - models
+
+  drivers:
+    canUse:
+      - chi
+    mayDependOn:
+      - models
+      - ports
+
+  drivens:
+    canUse:
+      - neo4j
+    mayDependOn:
+      - models
+
+  services:
+    mayDependOn:
+      - models
+      - ports
+
+  cmdapi:
+    canUse:
+      - chi
+      - neo4j
+    mayDependOn:
+      - services
+      - pkg
+      - drivens
+      - drivers
+
+  pkg:
+    canUse:
+      - yaml
+      - neo4j
+    mayDependOn:
+      - pkg

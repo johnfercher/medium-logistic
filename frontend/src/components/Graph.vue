@@ -112,7 +112,7 @@ export default {
   },
   methods: {
     async getGraph() {
-      const graph = await axios.get("http://localhost:3000/graph").then(response => {
+      const graph = await axios.get("http://localhost:8083/graph").then(response => {
         return response.data
       }).catch(err => {
         return err
