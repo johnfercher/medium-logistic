@@ -33,9 +33,6 @@
 import axios from "axios";
 import VNetworkGraph from "v-network-graph"
 import * as vNG from "v-network-graph"
-/*import {
-  ForceLayout,
-} from "v-network-graph/lib/force-layout"*/
 import {reactive} from "vue";
 
 export default {
@@ -54,26 +51,9 @@ export default {
       },
       configs: reactive(
           vNG.defineConfigs({
-            /*view: {
-              layoutHandler: new ForceLayout({
-                positionFixedByDrag: false,
-                positionFixedByClickWithAltKey: true,
-                createSimulation: (d3, nodes, edges) => {
-                  // d3-force parameters
-                  const forceLink = d3.forceLink(edges).id(d => d.id)
-                  return d3
-                      .forceSimulation(nodes)
-                      .force("edge", forceLink.distance(200).strength(20.5))
-                      .force("charge", d3.forceManyBody().strength(-10000))
-                      .force("center", d3.forceCenter().strength(0.101))
-                      .alphaMin(0.011)
-                }
-              }),
-            },*/
             node: {
               normal: {
                 radius: n => n.radius,
-                //color: n => n.color,
                 borderRadius: n => n.border_radius,
                 type: n => n.type,
                 width: n => n.width,
