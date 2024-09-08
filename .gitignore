@@ -26,3 +26,4 @@ go.work.sum
 .idea/
 .venv/
 .ipynb_checkpoints
+neo4j/data/*
