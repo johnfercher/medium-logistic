@@ -21,7 +21,7 @@ type Config struct {
 }
 
 func (c *Config) Print() {
-	fmt.Printf("loaded env=%s, mysql.url=%s, mysql.user=%s, mysql.password=%s\n",
+	fmt.Printf("loaded env=%s, neo4j.url=%s, neo4j.user=%s, neo4j.password=%s\n",
 		c.Env, c.Neo4j.URL, c.Neo4j.User, c.Neo4j.Password)
 }
 

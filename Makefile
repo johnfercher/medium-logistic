@@ -33,10 +33,13 @@ mocks:
 	mockery
 	make fmt
 
-.PHONY: build-docker
-build-docker:
+.PHONY: build-docker-api
+build-docker-api:
 	docker build -t logistic-api .
-	bash neo4j/build.sh
+
+.PHONY: build-docker-neo4j
+build-docker-neo4j:
+	cd neo4j && bash build.sh
 
 .PHONY: run-docker
 run-docker:
@@ -45,3 +48,7 @@ run-docker:
 .PHONY: run
 run:
 	docker-compose up
+
+.PHONY: initdb
+initdb:
+	cd neo4j && bash initdb.sh
