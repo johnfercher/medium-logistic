@@ -1,5 +1,5 @@
 # stage de build
-FROM golang:1.21.1 AS build
+FROM golang:1.23.0 AS build
 WORKDIR /app
 COPY . /app
 RUN CGO_ENABLED=0 GOOS=linux go build -o api cmd/api/main.go

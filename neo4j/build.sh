@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker build -t tech-neo4j .
+sudo docker build -t logistic-neo4j .

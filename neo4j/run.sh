@@ -5,4 +5,4 @@ docker run \
     --volume=$HOME/neo4j-br/data:/data \
     --volume=$HOME/neo4j-br/import:/var/lib/neo4j/import \
     --env NEO4J_PLUGINS='["graph-data-science"]' \
-    tech-neo4j &
+    logistic-neo4j &

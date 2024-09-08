@@ -1,0 +1,41 @@
+version: '3'
+
+networks:
+  transactional:
+    driver: bridge
+
+services:
+  logistic-neo4j:
+    image: logistic-neo4j
+    container_name: logistic-neo4j
+    expose:
+      - '7474'
+      - '7687'
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/changeme
+    volumes:
+      - ./neo4j/data/neo4j.conf:/conf/neo4j.conf
+      - ./neo4j/data/data/server1:/data
+      - ./neo4j/data/logs/server1:/logs
+      - ./neo4j/data/conf/server1:/conf
+      - ./neo4j/data/import/server1:/import
+    healthcheck:
+      test: "exit 0"
+    networks:
+      - transactional
+
+  logistic-api:
+    image: logistic-api
+    container_name: logistic-api
+    expose:
+      - '8083'
+    ports:
+      - "8083:8083"
+    depends_on:
+      logistic-neo4j:
+        condition: service_healthy
+    networks:
+      - transactional

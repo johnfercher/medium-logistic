@@ -1,4 +1,4 @@
 neo4j:
-  url: "neo4j:7687"
+  url: "logistic-neo4j:7687"
   user: "neo4j"
   password: "supersecret"

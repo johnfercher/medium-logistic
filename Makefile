@@ -36,7 +36,12 @@ mocks:
 .PHONY: build-docker
 build-docker:
 	docker build -t logistic-api .
+	bash neo4j/build.sh
 
 .PHONY: run-docker
 run-docker:
 	docker run -p 8083:8083 logistic-api
+
+.PHONY: run
+run:
+	docker-compose up
