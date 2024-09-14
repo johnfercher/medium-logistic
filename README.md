@@ -23,7 +23,7 @@ npm run server # Terminal B - Blocking
 ## Queries
 ```cypher
 MATCH (source:City {id: 'maceio'}), (target:City {id: 'sao_paulo'})
-CALL gds.shortestPath.dijkstra.stream('myGraph', {
+CALL gds.shortestPath.dijkstra.stream('projection', {
     sourceNode: source,
     targetNodes: target,
     relationshipWeightProperty: 'distance_km'
@@ -42,11 +42,27 @@ ORDER BY index
 
 
 ```cypher
-MATCH (a:City)-[r:road]->(b:City)
+MATCH (a:City)-[r]->(b:City)
 RETURN gds.graph.project(
-  'myGraph',
-  a,
-  b,
-  { relationshipProperties: r { .distance_km } }
+'projection',
+a,
+b,
+{
+  relationshipProperties: r { .distance_km },
+  relationshipType: type(r)
+}
 )
+```
+
+
+```cypher
+MATCH (n) DETACH DELETE n
+
+CALL gds.graph.drop('projection') YIELD graphName;
+```
+
+## Jupyter Lab
+
+```bash
+source .venv/bin/activate
 ```

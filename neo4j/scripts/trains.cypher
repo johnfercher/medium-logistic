@@ -1,0 +1,2 @@
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "vitoria" CREATE (a)-[:train {distance:664, speed:50, delay:1, price_rate:0.09}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "vitoria" CREATE (a)<-[:train {distance:664, speed:50, delay:1, price_rate:0.09}]-(b);

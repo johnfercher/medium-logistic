@@ -52,3 +52,7 @@ run:
 .PHONY: initdb
 initdb:
 	cd neo4j && bash initdb.sh
+
+.PHONY: cleandb
+cleandb:
+	cd neo4j/data && sudo rm -R *

@@ -1,28 +1,68 @@
-id,name,state,acronym,type,latitude,longitude,population
+id,city,state,acronym,type,latitude,longitude,population
 rio_branco,Rio Branco,Acre,AC,Capital,-9.974,-67.8076,364756
+cruzeiro_do_sul,Cruzeiro do Sul,Acre,AC,Normal,-7.6649,-72.6504,364756
+tarauaca,Tarauacá,Acre,AC,Normal,-8.13562,-70.765,43467
 maceio,Maceió,Alagoas,AL,Capital,-9.66625,-35.7351,957916
 macapa,Macapá,Amapá,AP,Capital,0.0344566,-51.0666,442933
+oiapoque,Oiapoque,Amapá,AP,Normal,3.83149,-51.8354,27482
 manaus,Manaus,Amazonas,AM,Capital,-3.10719,-60.0261,2302000
+tefe,Tefé,Amazonas,AM,Normal,-3.32073,-64.7236,79278
+coari,Coari,Amazonas,AM,Normal,-4.08488,-63.1417,73820
+tabatinga,Tabatinga,Amazonas,AM,Normal,-4.25335,-69.9385,72283
 salvador,Salvador,Bahia,BA,Capital,-12.9704,-38.5124,2418000
+itamaraju,Itamaraju,Bahia,BA,Normal,-17.0561,-39.5472,64455
+ibotirama,Ibotirama,Bahia,BA,Normal,-12.1818,-43.2132,27003
 fortaleza,Fortaleza,Ceará,CE,Capital,-3.71839,-38.5434,2429000
+juazeiro_do_norte,Juazeiro do Norte,Ceará,CE,Normal,-7.23718,-39.3222,303004
+sobral,Sobral,Bahia,CE,Normal,-3.68274,-40.3512,215286
 brasilia,Brasília,Distrito Federal,DF,Capital,-15.7801,-47.9292,2817381
 vitoria,Vitória,Espírito Santo,ES,Capital,-20.3222,-40.3381,322869
 goiania,Goiânia,Goiás,GO,Capital,-16.6799,-49.255,1437366
+rio_verde,Rio Verde,Goiás,GO,Normal,-17.7972,-50.9,238025
+aruana,Aruanã,Goiás,GO,Normal,-14.9243,-51.0771,10110
 sao_luis,São Luís,Maranhão,MA,Capital,-2.53073,-44.3068,1038000
+imperatriz,Imperatriz,Maranhão,MA,Normal,-5.5255,-47.477,273110
 cuiaba,Cuiabá,Mato Grosso,MT,Capital,-15.5989,-56.0949,650912
+sinop,Sinop,Mato Grosso,MT,Normal,-11.873,-55.4982,196067
+confresa,Confresa,Mato Grosso,MT,Normal,-10.6445,-51.5679,31510
 campo_grande,Campo Grande,Mato Grosso do Sul,MS,Capital,-20.4435,-54.6478,916001
+dourados,Dourados,Mato Grosso do Sul,MS,Normal,-22.223561,-54.8125486,243368
 belo_horizonte,Belo Horizonte,Minas Gerais,MG,Capital,-19.912998,-43.940933,2316000
+uberlandia,Uberlândia,Minas Gerais,MG,Normal,-18.913664,-48.266560,713224
+montes_claros,Montes Claros,Minas Gerais,MG,Normal,-16.737,-43.8647,413487
 belem,Belém,Pará,PA,Capital,-1.45502,-48.5024,1303000
+santarem,Santarém,Pará,PA,Normal,-2.43944,-54.6987,331937
+parauapebas,Parauapebas,Pará,PA,Normal,-6.07074,-49.9043,298854
+itaituba,Itaituba,Pará,PA,Normal,-4.26913,-55.9897,123312
 joao_pessoa,João Pessoa,Paraíba,PB,Capital,-7.11532,-34.861,833932
 curitiba,Curitiba,Paraná,PR,Capital,-25.4284,-49.2733,1773718
-recife,Recife,Pernambuco,PE,Capital,-8.05428,-34.8813,9059000
+londrina,Londrina,Paraná,PR,Normal,-23.2927,-51.1732,577318
+cascavel,Cascavel,Paraná,PR,Normal,-24.9555,-53.4552,364104
+recife,Recife,Pernambuco,PE,Capital,-8.05428,-34.8813,1537704
+petrolina,Petrolina,Pernambuco,PE,Normal,-9.39416,-40.5096,414083
+fernando_de_noronha,Fernando de Noronha,Pernambuco,PE,Island,-3.84036,-32.4113,3101
 teresina,Teresina,Piauí,PI,Capital,-5.08921,-42.8016,866300
+parnaiba,Parnaíba,Piauí,PI,Normal,-2.90393,-41.7763,169552
 rio_de_janeiro,Rio de Janeiro,Rio de Janeiro,RJ,Capital,-22.908333,-43.196388,6211000
+campos_dos_goytacazes,Campos dos Goytacazes,Rio de Janeiro,RJ,Normal,-21.7545,-41.3244,483540
 natal,Natal,Rio Grande do Norte,RN,Capital,-5.79448,-35.211,751300
+mossoro,Mossoró,Rio Grande do Norte,RN,Normal,-5.18804,-37.3441,264577
+caico,Caicó,Rio Grande do Norte,RN,Normal,-6.45981,-37.099,61146
 porto_alegre,Porto Alegre,Rio Grande do Sul,RS,Capital,-30.033056,-51.230000,1332845
+pelotas,Pelotas,Rio Grande do Sul,RS,Normal,-31.776,-52.3594,325689
+santa_maria,Santa Maria,Rio Grande do Sul,RS,Normal,-29.6914,-53.8008,271633
 porto_velho,Porto Velho,Rondônia,RO,Capital,-8.76183,-63.902,460413
+ji_parana,Ji-Paraná,Rondônia,RO,Normal,-10.88528,-61.95167,124333
+vilhena,Vilhena,Rondônia,RO,Normal,-12.7341,-60.1446,95832
 boa_vista,Boa Vista,Roraima,RR,Capital,2.81954,-60.6714,436591
+rorainopolis,Rorainópolis,Roraima,RR,Normal,0.945634,-60.4184,36747
+pacaraima,Pacaraima,Roraima,RR,Normal,4.41701,-61.1408,22104
 florianopolis,Florianópolis,Santa Catarina,SC,Capital,-27.593500,-48.558540,537211
-sao_paulo,São Paulo,São Paulo,SE,Capital,-23.5489,-46.6388,11450000
-aracaju,Aracaju,Sergipe,CE,Capital,-10.9095,-37.0748,602757
+chapeco,Chapecó,Santa Catarina,SC,Normal,-27.0968,-52.6186,254785
+sao_paulo,São Paulo,São Paulo,SP,Capital,-23.5489,-46.6388,11450000
+ribeirao_preto,Ribeirão Preto,São Paulo,SP,Normal,-21.1767,-47.8208,728400
+aracaju,Aracaju,Sergipe,SE,Capital,-10.9095,-37.0748,602757
 palmas,Palmas,Tocantins,TO,Capital,-10.1689,-48.3317,302692
+guiana,Guiana,Internacional,INTL,International,6.80474,-58.1556,0
+suriname,Suriname,Internacional,INTL,International,5.82574,-55.1645,0
+guiana_francesa,Guiana Francesa,Internacional,INTL,International,4.93333,-52.3333,0
