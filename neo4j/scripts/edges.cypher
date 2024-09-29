@@ -1,152 +1,294 @@
-MATCH (a:City), (b:City) WHERE a.id = "rio_branco" AND b.id = "porto_velho" CREATE (a)-[:road {distance_km:510}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "rio_branco" AND b.id = "porto_velho" CREATE (a)<-[:road {distance_km:510}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "boa_vista" CREATE (a)-[:road {distance_km:748}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "boa_vista" CREATE (a)<-[:road {distance_km:748}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "macapa" CREATE (a)-[:road {distance_km:2993}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "macapa" CREATE (a)<-[:road {distance_km:2993}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "belem" CREATE (a)-[:road {distance_km:2994}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "belem" CREATE (a)<-[:road {distance_km:2994}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "cuiaba" CREATE (a)-[:road {distance_km:2349}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "cuiaba" CREATE (a)<-[:road {distance_km:2349}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "porto_velho" CREATE (a)-[:road {distance_km:889}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "porto_velho" CREATE (a)<-[:road {distance_km:889}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "belem" CREATE (a)-[:road {distance_km:527}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "belem" CREATE (a)<-[:road {distance_km:527}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "sao_luis" CREATE (a)-[:road {distance_km:582}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "sao_luis" CREATE (a)<-[:road {distance_km:582}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "palmas" CREATE (a)-[:road {distance_km:1211}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "palmas" CREATE (a)<-[:road {distance_km:1211}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "fortaleza" CREATE (a)-[:road {distance_km:904}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "fortaleza" CREATE (a)<-[:road {distance_km:904}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "teresina" CREATE (a)-[:road {distance_km:436}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "teresina" CREATE (a)<-[:road {distance_km:436}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "natal" CREATE (a)-[:road {distance_km:522}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "natal" CREATE (a)<-[:road {distance_km:522}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "teresina" CREATE (a)-[:road {distance_km:604}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "teresina" CREATE (a)<-[:road {distance_km:604}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "joao_pessoa" CREATE (a)-[:road {distance_km:671}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "joao_pessoa" CREATE (a)<-[:road {distance_km:671}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "joao_pessoa" CREATE (a)-[:road {distance_km:181}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "joao_pessoa" CREATE (a)<-[:road {distance_km:181}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "teresina" CREATE (a)-[:road {distance_km:1055}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "teresina" CREATE (a)<-[:road {distance_km:1055}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "recife" CREATE (a)-[:road {distance_km:116}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "recife" CREATE (a)<-[:road {distance_km:116}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "teresina" CREATE (a)-[:road {distance_km:1156}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "teresina" CREATE (a)<-[:road {distance_km:1156}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "maceio" CREATE (a)-[:road {distance_km:257}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "maceio" CREATE (a)<-[:road {distance_km:257}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "teresina" CREATE (a)-[:road {distance_km:1128}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "teresina" CREATE (a)<-[:road {distance_km:1128}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "aracaju" CREATE (a)-[:road {distance_km:500}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "aracaju" CREATE (a)<-[:road {distance_km:500}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "teresina" CREATE (a)-[:road {distance_km:1173}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "teresina" CREATE (a)<-[:road {distance_km:1173}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "aracaju" AND b.id = "salvador" CREATE (a)-[:road {distance_km:325}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "aracaju" AND b.id = "salvador" CREATE (a)<-[:road {distance_km:325}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "vitoria" CREATE (a)-[:road {distance_km:1176}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "vitoria" CREATE (a)<-[:road {distance_km:1176}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "palmas" CREATE (a)-[:road {distance_km:1438}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "palmas" CREATE (a)<-[:road {distance_km:1438}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "rio_de_janeiro" CREATE (a)-[:road {distance_km:518}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "rio_de_janeiro" CREATE (a)<-[:road {distance_km:518}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance_km:514}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance_km:514}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "sao_paulo" CREATE (a)-[:road {distance_km:444}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "sao_paulo" CREATE (a)<-[:road {distance_km:444}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance_km:442}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance_km:442}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "curitiba" CREATE (a)-[:road {distance_km:402}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "curitiba" CREATE (a)<-[:road {distance_km:402}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance_km:583}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance_km:583}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "campo_grande" CREATE (a)-[:road {distance_km:982}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "campo_grande" CREATE (a)<-[:road {distance_km:982}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "florianopolis" CREATE (a)-[:road {distance_km:307}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "florianopolis" CREATE (a)<-[:road {distance_km:307}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "campo_grande" CREATE (a)-[:road {distance_km:977}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "campo_grande" CREATE (a)<-[:road {distance_km:977}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "porto_alegre" CREATE (a)-[:road {distance_km:463}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "porto_alegre" CREATE (a)<-[:road {distance_km:463}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "brasilia" CREATE (a)-[:road {distance_km:208}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "brasilia" CREATE (a)<-[:road {distance_km:208}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance_km:889}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance_km:889}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "cuiaba" CREATE (a)-[:road {distance_km:897}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "cuiaba" CREATE (a)<-[:road {distance_km:897}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "campo_grande" CREATE (a)-[:road {distance_km:839}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "campo_grande" CREATE (a)<-[:road {distance_km:839}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "palmas" CREATE (a)-[:road {distance_km:845}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "palmas" CREATE (a)<-[:road {distance_km:845}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "aracaju" CREATE (a)-[:road {distance_km:1640}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "aracaju" CREATE (a)<-[:road {distance_km:1640}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "campo_grande" CREATE (a)-[:road {distance_km:707}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "campo_grande" CREATE (a)<-[:road {distance_km:707}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "palmas" CREATE (a)-[:road {distance_km:1530}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "palmas" CREATE (a)<-[:road {distance_km:1530}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "porto_velho" CREATE (a)-[:road {distance_km:1965}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "porto_velho" CREATE (a)<-[:road {distance_km:1965}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "campo_grande" CREATE (a)-[:road {distance_km:1424}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "campo_grande" CREATE (a)<-[:road {distance_km:1424}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "campo_grande" CREATE (a)-[:road {distance_km:1264}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "campo_grande" CREATE (a)<-[:road {distance_km:1264}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "salvador" CREATE (a)-[:road {distance_km:1350}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "salvador" CREATE (a)<-[:road {distance_km:1350}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "brasilia" CREATE (a)-[:road {distance_km:733}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "brasilia" CREATE (a)<-[:road {distance_km:733}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "palmas" CREATE (a)-[:road {distance_km:1109}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "palmas" CREATE (a)<-[:road {distance_km:1109}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "aracaju" CREATE (a)-[:road {distance_km:1119}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "aracaju" CREATE (a)<-[:road {distance_km:1119}]-(b);
-
-MATCH (a:City), (b:City) WHERE a.id = "porto_velho" AND b.id = "palmas" CREATE (a)-[:road {distance_km:2752}]->(b);
-MATCH (a:City), (b:City) WHERE a.id = "porto_velho" AND b.id = "palmas" CREATE (a)<-[:road {distance_km:2752}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "vitoria" CREATE (a)-[:train {distance:664, speed:50, delay:1, price_rate:0.090000, duration:14.280000, price:59.760000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "vitoria" CREATE (a)<-[:train {distance:664, speed:50, delay:1, price_rate:0.090000, duration:14.280000, price:59.760000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "belem" CREATE (a)-[:water {distance:339, speed:12, delay:1, price_rate:0.700000, duration:29.250000, price:237.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "belem" CREATE (a)<-[:water {distance:339, speed:12, delay:1, price_rate:0.700000, duration:29.250000, price:237.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "coari" CREATE (a)-[:water {distance:370, speed:52, delay:1, price_rate:0.700000, duration:8.115385, price:259.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "coari" CREATE (a)<-[:water {distance:370, speed:52, delay:1, price_rate:0.700000, duration:8.115385, price:259.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "santarem" CREATE (a)-[:water {distance:740, speed:24, delay:1, price_rate:0.700000, duration:31.833333, price:518.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "santarem" CREATE (a)<-[:water {distance:740, speed:24, delay:1, price_rate:0.700000, duration:31.833333, price:518.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "coari" AND b.id = "tefe" CREATE (a)-[:water {distance:212, speed:70, delay:1, price_rate:0.700000, duration:4.028571, price:148.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "coari" AND b.id = "tefe" CREATE (a)<-[:water {distance:212, speed:70, delay:1, price_rate:0.700000, duration:4.028571, price:148.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "tefe" AND b.id = "tabatinga" CREATE (a)-[:water {distance:942, speed:27, delay:1, price_rate:0.700000, duration:35.888889, price:659.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "tefe" AND b.id = "tabatinga" CREATE (a)<-[:water {distance:942, speed:27, delay:1, price_rate:0.700000, duration:35.888889, price:659.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "santarem" CREATE (a)-[:water {distance:273, speed:39, delay:1, price_rate:0.700000, duration:8.000000, price:191.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "santarem" CREATE (a)<-[:water {distance:273, speed:39, delay:1, price_rate:0.700000, duration:8.000000, price:191.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "fernando_de_noronha" CREATE (a)-[:water {distance:374, speed:12, delay:1, price_rate:0.700000, duration:32.166667, price:261.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "fernando_de_noronha" CREATE (a)<-[:water {distance:374, speed:12, delay:1, price_rate:0.700000, duration:32.166667, price:261.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "salvador" CREATE (a)-[:air {distance:1084, speed:860, delay:2, price_rate:2.100000, duration:3.260465, price:2276.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "salvador" CREATE (a)<-[:air {distance:1084, speed:860, delay:2, price_rate:2.100000, duration:3.260465, price:2276.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "fortaleza" CREATE (a)-[:air {distance:1686, speed:860, delay:2, price_rate:1.960000, duration:3.960465, price:3304.560000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "fortaleza" CREATE (a)<-[:air {distance:1686, speed:860, delay:2, price_rate:1.960000, duration:3.960465, price:3304.560000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "manaus" CREATE (a)-[:air {distance:1942, speed:860, delay:2, price_rate:1.460000, duration:4.258140, price:2835.320000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "manaus" CREATE (a)<-[:air {distance:1942, speed:860, delay:2, price_rate:1.460000, duration:4.258140, price:2835.320000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "fortaleza" CREATE (a)-[:air {distance:626, speed:860, delay:2, price_rate:4.960000, duration:2.727907, price:3104.960000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "fortaleza" CREATE (a)<-[:air {distance:626, speed:860, delay:2, price_rate:4.960000, duration:2.727907, price:3104.960000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "belem" CREATE (a)-[:air {distance:207, speed:860, delay:2, price_rate:4.770000, duration:2.240698, price:987.390000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "belem" CREATE (a)<-[:air {distance:207, speed:860, delay:2, price_rate:4.770000, duration:2.240698, price:987.390000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "florianopolis" CREATE (a)-[:air {distance:495, speed:860, delay:2, price_rate:6.250000, duration:2.575581, price:3093.750000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "florianopolis" CREATE (a)<-[:air {distance:495, speed:860, delay:2, price_rate:6.250000, duration:2.575581, price:3093.750000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "belem" CREATE (a)-[:air {distance:1606, speed:860, delay:2, price_rate:1.270000, duration:3.867442, price:2039.620000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "belem" CREATE (a)<-[:air {distance:1606, speed:860, delay:2, price_rate:1.270000, duration:3.867442, price:2039.620000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "belo_horizonte" CREATE (a)-[:air {distance:373, speed:860, delay:2, price_rate:4.980000, duration:2.433721, price:1857.540000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "belo_horizonte" CREATE (a)<-[:air {distance:373, speed:860, delay:2, price_rate:4.980000, duration:2.433721, price:1857.540000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "sao_luis" CREATE (a)-[:air {distance:652, speed:860, delay:2, price_rate:3.560000, duration:2.758140, price:2321.120000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "sao_luis" CREATE (a)<-[:air {distance:652, speed:860, delay:2, price_rate:3.560000, duration:2.758140, price:2321.120000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "vitoria" CREATE (a)-[:air {distance:380, speed:860, delay:2, price_rate:5.750000, duration:2.441860, price:2185.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "vitoria" CREATE (a)<-[:air {distance:380, speed:860, delay:2, price_rate:5.750000, duration:2.441860, price:2185.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "brasilia" CREATE (a)-[:air {distance:875, speed:860, delay:2, price_rate:2.810000, duration:3.017442, price:2458.750000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "brasilia" CREATE (a)<-[:air {distance:875, speed:860, delay:2, price_rate:2.810000, duration:3.017442, price:2458.750000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "belo_horizonte" CREATE (a)-[:air {distance:517, speed:860, delay:2, price_rate:2.950000, duration:2.601163, price:1525.150000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "belo_horizonte" CREATE (a)<-[:air {distance:517, speed:860, delay:2, price_rate:2.950000, duration:2.601163, price:1525.150000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "porto_velho" CREATE (a)-[:air {distance:768, speed:860, delay:2, price_rate:5.920000, duration:2.893023, price:4546.560000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "porto_velho" CREATE (a)<-[:air {distance:768, speed:860, delay:2, price_rate:5.920000, duration:2.893023, price:4546.560000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "porto_alegre" CREATE (a)-[:air {distance:375, speed:860, delay:2, price_rate:4.980000, duration:2.436047, price:1867.500000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "porto_alegre" CREATE (a)<-[:air {distance:375, speed:860, delay:2, price_rate:4.980000, duration:2.436047, price:1867.500000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "belem" CREATE (a)-[:air {distance:481, speed:860, delay:2, price_rate:2.250000, duration:2.559302, price:1082.250000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "belem" CREATE (a)<-[:air {distance:481, speed:860, delay:2, price_rate:2.250000, duration:2.559302, price:1082.250000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "fernando_de_noronha" CREATE (a)-[:air {distance:374, speed:860, delay:2, price_rate:11.220000, duration:2.434884, price:4196.280000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "fernando_de_noronha" CREATE (a)<-[:air {distance:374, speed:860, delay:2, price_rate:11.220000, duration:2.434884, price:4196.280000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "cuiaba" CREATE (a)-[:air {distance:877, speed:860, delay:2, price_rate:2.150000, duration:3.019767, price:1885.550000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "cuiaba" CREATE (a)<-[:air {distance:877, speed:860, delay:2, price_rate:2.150000, duration:3.019767, price:1885.550000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "porto_velho" CREATE (a)-[:air {distance:1904, speed:860, delay:2, price_rate:0.730000, duration:4.213953, price:1389.920000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "porto_velho" CREATE (a)<-[:air {distance:1904, speed:860, delay:2, price_rate:0.730000, duration:4.213953, price:1389.920000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "rio_branco" CREATE (a)-[:air {distance:2249, speed:860, delay:2, price_rate:1.340000, duration:4.615116, price:3013.660000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "rio_branco" CREATE (a)<-[:air {distance:2249, speed:860, delay:2, price_rate:1.340000, duration:4.615116, price:3013.660000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "campo_grande" CREATE (a)-[:air {distance:891, speed:860, delay:2, price_rate:2.410000, duration:3.036047, price:2147.310000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "campo_grande" CREATE (a)<-[:air {distance:891, speed:860, delay:2, price_rate:2.410000, duration:3.036047, price:2147.310000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "rio_de_janeiro" CREATE (a)-[:air {distance:360, speed:860, delay:2, price_rate:7.540000, duration:2.418605, price:2714.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "rio_de_janeiro" CREATE (a)<-[:air {distance:360, speed:860, delay:2, price_rate:7.540000, duration:2.418605, price:2714.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "fortaleza" CREATE (a)-[:air {distance:2371, speed:860, delay:2, price_rate:0.570000, duration:4.756977, price:1351.470000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "fortaleza" CREATE (a)<-[:air {distance:2371, speed:860, delay:2, price_rate:0.570000, duration:4.756977, price:1351.470000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "recife" CREATE (a)-[:air {distance:670, speed:860, delay:2, price_rate:2.010000, duration:2.779070, price:1346.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "recife" CREATE (a)<-[:air {distance:670, speed:860, delay:2, price_rate:2.010000, duration:2.779070, price:1346.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "manaus" CREATE (a)-[:air {distance:1289, speed:860, delay:2, price_rate:2.040000, duration:3.498837, price:2629.560000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "manaus" CREATE (a)<-[:air {distance:1289, speed:860, delay:2, price_rate:2.040000, duration:3.498837, price:2629.560000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "florianopolis" CREATE (a)-[:road {distance:307, speed:100, delay:1, price_rate:0.300000, duration:4.070000, price:92.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "florianopolis" CREATE (a)<-[:road {distance:307, speed:100, delay:1, price_rate:0.300000, duration:4.070000, price:92.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "cascavel" CREATE (a)-[:road {distance:504, speed:100, delay:1, price_rate:0.300000, duration:6.040000, price:151.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "cascavel" CREATE (a)<-[:road {distance:504, speed:100, delay:1, price_rate:0.300000, duration:6.040000, price:151.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "chapeco" CREATE (a)-[:road {distance:562, speed:100, delay:1, price_rate:0.300000, duration:6.620000, price:168.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "chapeco" CREATE (a)<-[:road {distance:562, speed:100, delay:1, price_rate:0.300000, duration:6.620000, price:168.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "rorainopolis" CREATE (a)-[:road {distance:488, speed:100, delay:1, price_rate:0.300000, duration:5.880000, price:146.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "rorainopolis" CREATE (a)<-[:road {distance:488, speed:100, delay:1, price_rate:0.300000, duration:5.880000, price:146.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "imperatriz" CREATE (a)-[:road {distance:580, speed:100, delay:1, price_rate:0.300000, duration:6.800000, price:174.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "imperatriz" CREATE (a)<-[:road {distance:580, speed:100, delay:1, price_rate:0.300000, duration:6.800000, price:174.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "juazeiro_do_norte" CREATE (a)-[:road {distance:1128, speed:100, delay:1, price_rate:0.300000, duration:12.280000, price:338.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "juazeiro_do_norte" CREATE (a)<-[:road {distance:1128, speed:100, delay:1, price_rate:0.300000, duration:12.280000, price:338.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "ibotirama" CREATE (a)-[:road {distance:655, speed:100, delay:1, price_rate:0.300000, duration:7.550000, price:196.500000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "ibotirama" CREATE (a)<-[:road {distance:655, speed:100, delay:1, price_rate:0.300000, duration:7.550000, price:196.500000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "campos_dos_goytacazes" CREATE (a)-[:road {distance:278, speed:100, delay:1, price_rate:0.300000, duration:3.780000, price:83.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "campos_dos_goytacazes" CREATE (a)<-[:road {distance:278, speed:100, delay:1, price_rate:0.300000, duration:3.780000, price:83.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance:583, speed:100, delay:1, price_rate:0.300000, duration:6.830000, price:174.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance:583, speed:100, delay:1, price_rate:0.300000, duration:6.830000, price:174.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "montes_claros" CREATE (a)-[:road {distance:700, speed:100, delay:1, price_rate:0.300000, duration:8.000000, price:210.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "montes_claros" CREATE (a)<-[:road {distance:700, speed:100, delay:1, price_rate:0.300000, duration:8.000000, price:210.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "tarauaca" AND b.id = "cruzeiro_do_sul" CREATE (a)-[:road {distance:228, speed:100, delay:1, price_rate:0.300000, duration:3.280000, price:68.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "tarauaca" AND b.id = "cruzeiro_do_sul" CREATE (a)<-[:road {distance:228, speed:100, delay:1, price_rate:0.300000, duration:3.280000, price:68.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "santarem" CREATE (a)-[:road {distance:1167, speed:100, delay:1, price_rate:0.300000, duration:12.670000, price:350.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "santarem" CREATE (a)<-[:road {distance:1167, speed:100, delay:1, price_rate:0.300000, duration:12.670000, price:350.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "juazeiro_do_norte" CREATE (a)-[:road {distance:606, speed:100, delay:1, price_rate:0.300000, duration:7.060000, price:181.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "juazeiro_do_norte" CREATE (a)<-[:road {distance:606, speed:100, delay:1, price_rate:0.300000, duration:7.060000, price:181.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "parauapebas" AND b.id = "santarem" CREATE (a)-[:road {distance:1073, speed:100, delay:1, price_rate:0.300000, duration:11.730000, price:321.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "parauapebas" AND b.id = "santarem" CREATE (a)<-[:road {distance:1073, speed:100, delay:1, price_rate:0.300000, duration:11.730000, price:321.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "aracaju" AND b.id = "petrolina" CREATE (a)-[:road {distance:478, speed:100, delay:1, price_rate:0.300000, duration:5.780000, price:143.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "aracaju" AND b.id = "petrolina" CREATE (a)<-[:road {distance:478, speed:100, delay:1, price_rate:0.300000, duration:5.780000, price:143.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance:514, speed:100, delay:1, price_rate:0.300000, duration:6.140000, price:154.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance:514, speed:100, delay:1, price_rate:0.300000, duration:6.140000, price:154.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ibotirama" AND b.id = "petrolina" CREATE (a)-[:road {distance:709, speed:100, delay:1, price_rate:0.300000, duration:8.090000, price:212.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ibotirama" AND b.id = "petrolina" CREATE (a)<-[:road {distance:709, speed:100, delay:1, price_rate:0.300000, duration:8.090000, price:212.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "porto_velho" CREATE (a)-[:road {distance:889, speed:100, delay:1, price_rate:0.300000, duration:9.890000, price:266.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "manaus" AND b.id = "porto_velho" CREATE (a)<-[:road {distance:889, speed:100, delay:1, price_rate:0.300000, duration:9.890000, price:266.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_verde" AND b.id = "cuiaba" CREATE (a)-[:road {distance:701, speed:100, delay:1, price_rate:0.300000, duration:8.010000, price:210.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_verde" AND b.id = "cuiaba" CREATE (a)<-[:road {distance:701, speed:100, delay:1, price_rate:0.300000, duration:8.010000, price:210.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ji_parana" AND b.id = "vilhena" CREATE (a)-[:road {distance:334, speed:100, delay:1, price_rate:0.300000, duration:4.340000, price:100.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ji_parana" AND b.id = "vilhena" CREATE (a)<-[:road {distance:334, speed:100, delay:1, price_rate:0.300000, duration:4.340000, price:100.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "guiana_francesa" AND b.id = "oiapoque" CREATE (a)-[:road {distance:194, speed:100, delay:1, price_rate:0.300000, duration:2.940000, price:58.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "guiana_francesa" AND b.id = "oiapoque" CREATE (a)<-[:road {distance:194, speed:100, delay:1, price_rate:0.300000, duration:2.940000, price:58.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "santa_maria" AND b.id = "chapeco" CREATE (a)-[:road {distance:401, speed:100, delay:1, price_rate:0.300000, duration:5.010000, price:120.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "santa_maria" AND b.id = "chapeco" CREATE (a)<-[:road {distance:401, speed:100, delay:1, price_rate:0.300000, duration:5.010000, price:120.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "palmas" AND b.id = "imperatriz" CREATE (a)-[:road {distance:628, speed:100, delay:1, price_rate:0.300000, duration:7.280000, price:188.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "palmas" AND b.id = "imperatriz" CREATE (a)<-[:road {distance:628, speed:100, delay:1, price_rate:0.300000, duration:7.280000, price:188.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "suriname" AND b.id = "guiana_francesa" CREATE (a)-[:road {distance:397, speed:100, delay:1, price_rate:0.300000, duration:4.970000, price:119.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "suriname" AND b.id = "guiana_francesa" CREATE (a)<-[:road {distance:397, speed:100, delay:1, price_rate:0.300000, duration:4.970000, price:119.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "sobral" CREATE (a)-[:road {distance:243, speed:100, delay:1, price_rate:0.300000, duration:3.430000, price:72.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "sobral" CREATE (a)<-[:road {distance:243, speed:100, delay:1, price_rate:0.300000, duration:3.430000, price:72.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "aruana" AND b.id = "palmas" CREATE (a)-[:road {distance:764, speed:100, delay:1, price_rate:0.300000, duration:8.640000, price:229.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "aruana" AND b.id = "palmas" CREATE (a)<-[:road {distance:764, speed:100, delay:1, price_rate:0.300000, duration:8.640000, price:229.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "rondonopolis" CREATE (a)-[:road {distance:216, speed:100, delay:1, price_rate:0.300000, duration:3.160000, price:64.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "rondonopolis" CREATE (a)<-[:road {distance:216, speed:100, delay:1, price_rate:0.300000, duration:3.160000, price:64.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "parauapebas" CREATE (a)-[:road {distance:1156, speed:100, delay:1, price_rate:0.300000, duration:12.560000, price:346.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "parauapebas" CREATE (a)<-[:road {distance:1156, speed:100, delay:1, price_rate:0.300000, duration:12.560000, price:346.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "confresa" AND b.id = "palmas" CREATE (a)-[:road {distance:583, speed:100, delay:1, price_rate:0.300000, duration:6.830000, price:174.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "confresa" AND b.id = "palmas" CREATE (a)<-[:road {distance:583, speed:100, delay:1, price_rate:0.300000, duration:6.830000, price:174.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rorainopolis" AND b.id = "boa_vista" CREATE (a)-[:road {distance:260, speed:100, delay:1, price_rate:0.300000, duration:3.600000, price:78.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rorainopolis" AND b.id = "boa_vista" CREATE (a)<-[:road {distance:260, speed:100, delay:1, price_rate:0.300000, duration:3.600000, price:78.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "itamaraju" CREATE (a)-[:road {distance:436, speed:100, delay:1, price_rate:0.300000, duration:5.360000, price:130.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "itamaraju" CREATE (a)<-[:road {distance:436, speed:100, delay:1, price_rate:0.300000, duration:5.360000, price:130.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "sao_paulo" CREATE (a)-[:road {distance:444, speed:100, delay:1, price_rate:0.300000, duration:5.440000, price:133.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "sao_paulo" CREATE (a)<-[:road {distance:444, speed:100, delay:1, price_rate:0.300000, duration:5.440000, price:133.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cascavel" AND b.id = "dourados" CREATE (a)-[:road {distance:411, speed:100, delay:1, price_rate:0.300000, duration:5.110000, price:123.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cascavel" AND b.id = "dourados" CREATE (a)<-[:road {distance:411, speed:100, delay:1, price_rate:0.300000, duration:5.110000, price:123.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "uberlandia" AND b.id = "campo_grande" CREATE (a)-[:road {distance:760, speed:100, delay:1, price_rate:0.300000, duration:8.600000, price:228.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "uberlandia" AND b.id = "campo_grande" CREATE (a)<-[:road {distance:760, speed:100, delay:1, price_rate:0.300000, duration:8.600000, price:228.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "chapeco" CREATE (a)-[:road {distance:454, speed:100, delay:1, price_rate:0.300000, duration:5.540000, price:136.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "chapeco" CREATE (a)<-[:road {distance:454, speed:100, delay:1, price_rate:0.300000, duration:5.540000, price:136.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_branco" AND b.id = "tarauaca" CREATE (a)-[:road {distance:409, speed:100, delay:1, price_rate:0.300000, duration:5.090000, price:122.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_branco" AND b.id = "tarauaca" CREATE (a)<-[:road {distance:409, speed:100, delay:1, price_rate:0.300000, duration:5.090000, price:122.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "imperatriz" CREATE (a)-[:road {distance:614, speed:100, delay:1, price_rate:0.300000, duration:7.140000, price:184.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "imperatriz" CREATE (a)<-[:road {distance:614, speed:100, delay:1, price_rate:0.300000, duration:7.140000, price:184.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "campos_dos_goytacazes" CREATE (a)-[:road {distance:241, speed:100, delay:1, price_rate:0.300000, duration:3.410000, price:72.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "vitoria" AND b.id = "campos_dos_goytacazes" CREATE (a)<-[:road {distance:241, speed:100, delay:1, price_rate:0.300000, duration:3.410000, price:72.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "brasilia" CREATE (a)-[:road {distance:208, speed:100, delay:1, price_rate:0.300000, duration:3.080000, price:62.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "brasilia" CREATE (a)<-[:road {distance:208, speed:100, delay:1, price_rate:0.300000, duration:3.080000, price:62.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "aruana" AND b.id = "sinop" CREATE (a)-[:road {distance:998, speed:100, delay:1, price_rate:0.300000, duration:10.980000, price:299.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "aruana" AND b.id = "sinop" CREATE (a)<-[:road {distance:998, speed:100, delay:1, price_rate:0.300000, duration:10.980000, price:299.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "mossoro" AND b.id = "teresina" CREATE (a)-[:road {distance:826, speed:100, delay:1, price_rate:0.300000, duration:9.260000, price:247.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "mossoro" AND b.id = "teresina" CREATE (a)<-[:road {distance:826, speed:100, delay:1, price_rate:0.300000, duration:9.260000, price:247.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "caico" CREATE (a)-[:road {distance:272, speed:100, delay:1, price_rate:0.300000, duration:3.720000, price:81.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "caico" CREATE (a)<-[:road {distance:272, speed:100, delay:1, price_rate:0.300000, duration:3.720000, price:81.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "londrina" CREATE (a)-[:road {distance:537, speed:100, delay:1, price_rate:0.300000, duration:6.370000, price:161.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "londrina" CREATE (a)<-[:road {distance:537, speed:100, delay:1, price_rate:0.300000, duration:6.370000, price:161.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "londrina" CREATE (a)-[:road {distance:388, speed:100, delay:1, price_rate:0.300000, duration:4.880000, price:116.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "curitiba" AND b.id = "londrina" CREATE (a)<-[:road {distance:388, speed:100, delay:1, price_rate:0.300000, duration:4.880000, price:116.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "aruana" CREATE (a)-[:road {distance:780, speed:100, delay:1, price_rate:0.300000, duration:8.800000, price:234.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "aruana" CREATE (a)<-[:road {distance:780, speed:100, delay:1, price_rate:0.300000, duration:8.800000, price:234.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "vilhena" CREATE (a)-[:road {distance:754, speed:100, delay:1, price_rate:0.300000, duration:8.540000, price:226.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "vilhena" CREATE (a)<-[:road {distance:754, speed:100, delay:1, price_rate:0.300000, duration:8.540000, price:226.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "parauapebas" CREATE (a)-[:road {distance:653, speed:100, delay:1, price_rate:0.300000, duration:7.530000, price:195.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "parauapebas" CREATE (a)<-[:road {distance:653, speed:100, delay:1, price_rate:0.300000, duration:7.530000, price:195.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "joao_pessoa" CREATE (a)-[:road {distance:181, speed:100, delay:1, price_rate:0.300000, duration:2.810000, price:54.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "joao_pessoa" CREATE (a)<-[:road {distance:181, speed:100, delay:1, price_rate:0.300000, duration:2.810000, price:54.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "porto_alegre" CREATE (a)-[:road {distance:463, speed:100, delay:1, price_rate:0.300000, duration:5.630000, price:138.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "florianopolis" AND b.id = "porto_alegre" CREATE (a)<-[:road {distance:463, speed:100, delay:1, price_rate:0.300000, duration:5.630000, price:138.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "uberlandia" CREATE (a)-[:road {distance:340, speed:100, delay:1, price_rate:0.300000, duration:4.400000, price:102.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "uberlandia" CREATE (a)<-[:road {distance:340, speed:100, delay:1, price_rate:0.300000, duration:4.400000, price:102.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "rio_verde" CREATE (a)-[:road {distance:232, speed:100, delay:1, price_rate:0.300000, duration:3.320000, price:69.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "goiania" AND b.id = "rio_verde" CREATE (a)<-[:road {distance:232, speed:100, delay:1, price_rate:0.300000, duration:3.320000, price:69.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "teresina" CREATE (a)-[:road {distance:436, speed:100, delay:1, price_rate:0.300000, duration:5.360000, price:130.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "teresina" CREATE (a)<-[:road {distance:436, speed:100, delay:1, price_rate:0.300000, duration:5.360000, price:130.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "aracaju" CREATE (a)-[:road {distance:500, speed:100, delay:1, price_rate:0.300000, duration:6.000000, price:150.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "maceio" AND b.id = "aracaju" CREATE (a)<-[:road {distance:500, speed:100, delay:1, price_rate:0.300000, duration:6.000000, price:150.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "brasilia" CREATE (a)-[:road {distance:733, speed:100, delay:1, price_rate:0.300000, duration:8.330000, price:219.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "brasilia" CREATE (a)<-[:road {distance:733, speed:100, delay:1, price_rate:0.300000, duration:8.330000, price:219.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "campo_grande" AND b.id = "dourados" CREATE (a)-[:road {distance:225, speed:100, delay:1, price_rate:0.300000, duration:3.250000, price:67.500000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "campo_grande" AND b.id = "dourados" CREATE (a)<-[:road {distance:225, speed:100, delay:1, price_rate:0.300000, duration:3.250000, price:67.500000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "parnaiba" CREATE (a)-[:road {distance:658, speed:100, delay:1, price_rate:0.300000, duration:7.580000, price:197.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "parnaiba" CREATE (a)<-[:road {distance:658, speed:100, delay:1, price_rate:0.300000, duration:7.580000, price:197.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "recife" CREATE (a)-[:road {distance:116, speed:100, delay:1, price_rate:0.300000, duration:2.160000, price:34.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "recife" CREATE (a)<-[:road {distance:116, speed:100, delay:1, price_rate:0.300000, duration:2.160000, price:34.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ribeirao_preto" AND b.id = "londrina" CREATE (a)-[:road {distance:466, speed:100, delay:1, price_rate:0.300000, duration:5.660000, price:139.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ribeirao_preto" AND b.id = "londrina" CREATE (a)<-[:road {distance:466, speed:100, delay:1, price_rate:0.300000, duration:5.660000, price:139.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "petrolina" CREATE (a)-[:road {distance:641, speed:100, delay:1, price_rate:0.300000, duration:7.410000, price:192.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "petrolina" CREATE (a)<-[:road {distance:641, speed:100, delay:1, price_rate:0.300000, duration:7.410000, price:192.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "mossoro" CREATE (a)-[:road {distance:279, speed:100, delay:1, price_rate:0.300000, duration:3.790000, price:83.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "natal" AND b.id = "mossoro" CREATE (a)<-[:road {distance:279, speed:100, delay:1, price_rate:0.300000, duration:3.790000, price:83.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "maceio" CREATE (a)-[:road {distance:257, speed:100, delay:1, price_rate:0.300000, duration:3.570000, price:77.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "recife" AND b.id = "maceio" CREATE (a)<-[:road {distance:257, speed:100, delay:1, price_rate:0.300000, duration:3.570000, price:77.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ibotirama" AND b.id = "palmas" CREATE (a)-[:road {distance:820, speed:100, delay:1, price_rate:0.300000, duration:9.200000, price:246.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ibotirama" AND b.id = "palmas" CREATE (a)<-[:road {distance:820, speed:100, delay:1, price_rate:0.300000, duration:9.200000, price:246.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "aruana" AND b.id = "goiania" CREATE (a)-[:road {distance:314, speed:100, delay:1, price_rate:0.300000, duration:4.140000, price:94.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "aruana" AND b.id = "goiania" CREATE (a)<-[:road {distance:314, speed:100, delay:1, price_rate:0.300000, duration:4.140000, price:94.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_velho" AND b.id = "ji_parana" CREATE (a)-[:road {distance:372, speed:100, delay:1, price_rate:0.300000, duration:4.720000, price:111.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_velho" AND b.id = "ji_parana" CREATE (a)<-[:road {distance:372, speed:100, delay:1, price_rate:0.300000, duration:4.720000, price:111.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "imperatriz" AND b.id = "parauapebas" CREATE (a)-[:road {distance:387, speed:100, delay:1, price_rate:0.300000, duration:4.870000, price:116.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "imperatriz" AND b.id = "parauapebas" CREATE (a)<-[:road {distance:387, speed:100, delay:1, price_rate:0.300000, duration:4.870000, price:116.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "uberlandia" AND b.id = "londrina" CREATE (a)-[:road {distance:746, speed:100, delay:1, price_rate:0.300000, duration:8.460000, price:223.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "uberlandia" AND b.id = "londrina" CREATE (a)<-[:road {distance:746, speed:100, delay:1, price_rate:0.300000, duration:8.460000, price:223.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "chapeco" AND b.id = "cascavel" CREATE (a)-[:road {distance:337, speed:100, delay:1, price_rate:0.300000, duration:4.370000, price:101.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "chapeco" AND b.id = "cascavel" CREATE (a)<-[:road {distance:337, speed:100, delay:1, price_rate:0.300000, duration:4.370000, price:101.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "mossoro" CREATE (a)-[:road {distance:241, speed:100, delay:1, price_rate:0.300000, duration:3.410000, price:72.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "mossoro" CREATE (a)<-[:road {distance:241, speed:100, delay:1, price_rate:0.300000, duration:3.410000, price:72.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "sinop" CREATE (a)-[:road {distance:480, speed:100, delay:1, price_rate:0.300000, duration:5.800000, price:144.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "sinop" CREATE (a)<-[:road {distance:480, speed:100, delay:1, price_rate:0.300000, duration:5.800000, price:144.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sobral" AND b.id = "parnaiba" CREATE (a)-[:road {distance:244, speed:100, delay:1, price_rate:0.300000, duration:3.440000, price:73.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sobral" AND b.id = "parnaiba" CREATE (a)<-[:road {distance:244, speed:100, delay:1, price_rate:0.300000, duration:3.440000, price:73.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "itamaraju" CREATE (a)-[:road {distance:740, speed:100, delay:1, price_rate:0.300000, duration:8.400000, price:222.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "itamaraju" CREATE (a)<-[:road {distance:740, speed:100, delay:1, price_rate:0.300000, duration:8.400000, price:222.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "montes_claros" CREATE (a)-[:road {distance:425, speed:100, delay:1, price_rate:0.300000, duration:5.250000, price:127.500000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "montes_claros" CREATE (a)<-[:road {distance:425, speed:100, delay:1, price_rate:0.300000, duration:5.250000, price:127.500000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "uberlandia" CREATE (a)-[:road {distance:537, speed:100, delay:1, price_rate:0.300000, duration:6.370000, price:161.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belo_horizonte" AND b.id = "uberlandia" CREATE (a)<-[:road {distance:537, speed:100, delay:1, price_rate:0.300000, duration:6.370000, price:161.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ji_parana" AND b.id = "sinop" CREATE (a)-[:road {distance:996, speed:100, delay:1, price_rate:0.300000, duration:10.960000, price:298.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ji_parana" AND b.id = "sinop" CREATE (a)<-[:road {distance:996, speed:100, delay:1, price_rate:0.300000, duration:10.960000, price:298.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "caico" AND b.id = "mossoro" CREATE (a)-[:road {distance:189, speed:100, delay:1, price_rate:0.300000, duration:2.890000, price:56.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "caico" AND b.id = "mossoro" CREATE (a)<-[:road {distance:189, speed:100, delay:1, price_rate:0.300000, duration:2.890000, price:56.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "boa_vista" AND b.id = "pacaraima" CREATE (a)-[:road {distance:214, speed:100, delay:1, price_rate:0.300000, duration:3.140000, price:64.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "boa_vista" AND b.id = "pacaraima" CREATE (a)<-[:road {distance:214, speed:100, delay:1, price_rate:0.300000, duration:3.140000, price:64.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "sao_luis" CREATE (a)-[:road {distance:582, speed:100, delay:1, price_rate:0.300000, duration:6.820000, price:174.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "belem" AND b.id = "sao_luis" CREATE (a)<-[:road {distance:582, speed:100, delay:1, price_rate:0.300000, duration:6.820000, price:174.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ribeirao_preto" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance:512, speed:100, delay:1, price_rate:0.300000, duration:6.120000, price:153.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ribeirao_preto" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance:512, speed:100, delay:1, price_rate:0.300000, duration:6.120000, price:153.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "uberlandia" AND b.id = "rio_verde" CREATE (a)-[:road {distance:336, speed:100, delay:1, price_rate:0.300000, duration:4.360000, price:100.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "uberlandia" AND b.id = "rio_verde" CREATE (a)<-[:road {distance:336, speed:100, delay:1, price_rate:0.300000, duration:4.360000, price:100.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "pelotas" CREATE (a)-[:road {distance:263, speed:100, delay:1, price_rate:0.300000, duration:3.630000, price:78.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "pelotas" CREATE (a)<-[:road {distance:263, speed:100, delay:1, price_rate:0.300000, duration:3.630000, price:78.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ibotirama" AND b.id = "montes_claros" CREATE (a)-[:road {distance:651, speed:100, delay:1, price_rate:0.300000, duration:7.510000, price:195.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ibotirama" AND b.id = "montes_claros" CREATE (a)<-[:road {distance:651, speed:100, delay:1, price_rate:0.300000, duration:7.510000, price:195.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "montes_claros" CREATE (a)-[:road {distance:1009, speed:100, delay:1, price_rate:0.300000, duration:11.090000, price:302.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "salvador" AND b.id = "montes_claros" CREATE (a)<-[:road {distance:1009, speed:100, delay:1, price_rate:0.300000, duration:11.090000, price:302.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "ibotirama" CREATE (a)-[:road {distance:803, speed:100, delay:1, price_rate:0.300000, duration:9.030000, price:240.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "ibotirama" CREATE (a)<-[:road {distance:803, speed:100, delay:1, price_rate:0.300000, duration:9.030000, price:240.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "sinop" CREATE (a)-[:road {distance:998, speed:100, delay:1, price_rate:0.300000, duration:10.980000, price:299.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "sinop" CREATE (a)<-[:road {distance:998, speed:100, delay:1, price_rate:0.300000, duration:10.980000, price:299.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sinop" AND b.id = "confresa" CREATE (a)-[:road {distance:636, speed:100, delay:1, price_rate:0.300000, duration:7.360000, price:190.800000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sinop" AND b.id = "confresa" CREATE (a)<-[:road {distance:636, speed:100, delay:1, price_rate:0.300000, duration:7.360000, price:190.800000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_velho" AND b.id = "manaus" CREATE (a)-[:road {distance:889, speed:100, delay:1, price_rate:0.300000, duration:9.890000, price:266.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_velho" AND b.id = "manaus" CREATE (a)<-[:road {distance:889, speed:100, delay:1, price_rate:0.300000, duration:9.890000, price:266.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "caico" AND b.id = "teresina" CREATE (a)-[:road {distance:827, speed:100, delay:1, price_rate:0.300000, duration:9.270000, price:248.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "caico" AND b.id = "teresina" CREATE (a)<-[:road {distance:827, speed:100, delay:1, price_rate:0.300000, duration:9.270000, price:248.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "palmas" CREATE (a)-[:road {distance:845, speed:100, delay:1, price_rate:0.300000, duration:9.450000, price:253.500000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "brasilia" AND b.id = "palmas" CREATE (a)<-[:road {distance:845, speed:100, delay:1, price_rate:0.300000, duration:9.450000, price:253.500000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "rondonopolis" CREATE (a)-[:road {distance:219, speed:100, delay:1, price_rate:0.300000, duration:3.190000, price:65.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "rondonopolis" CREATE (a)<-[:road {distance:219, speed:100, delay:1, price_rate:0.300000, duration:3.190000, price:65.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "santa_maria" CREATE (a)-[:road {distance:290, speed:100, delay:1, price_rate:0.300000, duration:3.900000, price:87.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "porto_alegre" AND b.id = "santa_maria" CREATE (a)<-[:road {distance:290, speed:100, delay:1, price_rate:0.300000, duration:3.900000, price:87.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "confresa" AND b.id = "parauapebas" CREATE (a)-[:road {distance:731, speed:100, delay:1, price_rate:0.300000, duration:8.310000, price:219.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "confresa" AND b.id = "parauapebas" CREATE (a)<-[:road {distance:731, speed:100, delay:1, price_rate:0.300000, duration:8.310000, price:219.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "juazeiro_do_norte" AND b.id = "caico" CREATE (a)-[:road {distance:323, speed:100, delay:1, price_rate:0.300000, duration:4.230000, price:96.900000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "juazeiro_do_norte" AND b.id = "caico" CREATE (a)<-[:road {distance:323, speed:100, delay:1, price_rate:0.300000, duration:4.230000, price:96.900000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "londrina" AND b.id = "campo_grande" CREATE (a)-[:road {distance:589, speed:100, delay:1, price_rate:0.300000, duration:6.890000, price:176.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "londrina" AND b.id = "campo_grande" CREATE (a)<-[:road {distance:589, speed:100, delay:1, price_rate:0.300000, duration:6.890000, price:176.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "parnaiba" CREATE (a)-[:road {distance:338, speed:100, delay:1, price_rate:0.300000, duration:4.380000, price:101.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "teresina" AND b.id = "parnaiba" CREATE (a)<-[:road {distance:338, speed:100, delay:1, price_rate:0.300000, duration:4.380000, price:101.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "palmas" AND b.id = "parauapebas" CREATE (a)-[:road {distance:704, speed:100, delay:1, price_rate:0.300000, duration:8.040000, price:211.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "palmas" AND b.id = "parauapebas" CREATE (a)<-[:road {distance:704, speed:100, delay:1, price_rate:0.300000, duration:8.040000, price:211.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "ribeirao_preto" AND b.id = "uberlandia" CREATE (a)-[:road {distance:280, speed:100, delay:1, price_rate:0.300000, duration:3.800000, price:84.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "ribeirao_preto" AND b.id = "uberlandia" CREATE (a)<-[:road {distance:280, speed:100, delay:1, price_rate:0.300000, duration:3.800000, price:84.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cascavel" AND b.id = "londrina" CREATE (a)-[:road {distance:380, speed:100, delay:1, price_rate:0.300000, duration:4.800000, price:114.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cascavel" AND b.id = "londrina" CREATE (a)<-[:road {distance:380, speed:100, delay:1, price_rate:0.300000, duration:4.800000, price:114.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "campo_grande" CREATE (a)-[:road {distance:707, speed:100, delay:1, price_rate:0.300000, duration:8.070000, price:212.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "cuiaba" AND b.id = "campo_grande" CREATE (a)<-[:road {distance:707, speed:100, delay:1, price_rate:0.300000, duration:8.070000, price:212.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "oiapoque" CREATE (a)-[:road {distance:578, speed:100, delay:1, price_rate:0.300000, duration:6.780000, price:173.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "macapa" AND b.id = "oiapoque" CREATE (a)<-[:road {distance:578, speed:100, delay:1, price_rate:0.300000, duration:6.780000, price:173.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "imperatriz" CREATE (a)-[:road {distance:632, speed:100, delay:1, price_rate:0.300000, duration:7.320000, price:189.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_luis" AND b.id = "imperatriz" CREATE (a)<-[:road {distance:632, speed:100, delay:1, price_rate:0.300000, duration:7.320000, price:189.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "juazeiro_do_norte" AND b.id = "petrolina" CREATE (a)-[:road {distance:348, speed:100, delay:1, price_rate:0.300000, duration:4.480000, price:104.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "juazeiro_do_norte" AND b.id = "petrolina" CREATE (a)<-[:road {distance:348, speed:100, delay:1, price_rate:0.300000, duration:4.480000, price:104.400000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "belo_horizonte" CREATE (a)-[:road {distance:441, speed:100, delay:1, price_rate:0.300000, duration:5.410000, price:132.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_de_janeiro" AND b.id = "belo_horizonte" CREATE (a)<-[:road {distance:441, speed:100, delay:1, price_rate:0.300000, duration:5.410000, price:132.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "curitiba" CREATE (a)-[:road {distance:402, speed:100, delay:1, price_rate:0.300000, duration:5.020000, price:120.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "curitiba" CREATE (a)<-[:road {distance:402, speed:100, delay:1, price_rate:0.300000, duration:5.020000, price:120.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "santa_maria" AND b.id = "pelotas" CREATE (a)-[:road {distance:294, speed:100, delay:1, price_rate:0.300000, duration:3.940000, price:88.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "santa_maria" AND b.id = "pelotas" CREATE (a)<-[:road {distance:294, speed:100, delay:1, price_rate:0.300000, duration:3.940000, price:88.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "porto_velho" CREATE (a)-[:road {distance:1252, speed:100, delay:1, price_rate:0.300000, duration:13.520000, price:375.600000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "itaituba" AND b.id = "porto_velho" CREATE (a)<-[:road {distance:1252, speed:100, delay:1, price_rate:0.300000, duration:13.520000, price:375.600000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "campo_grande" AND b.id = "rio_verde" CREATE (a)-[:road {distance:611, speed:100, delay:1, price_rate:0.300000, duration:7.110000, price:183.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "campo_grande" AND b.id = "rio_verde" CREATE (a)<-[:road {distance:611, speed:100, delay:1, price_rate:0.300000, duration:7.110000, price:183.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "guiana" AND b.id = "suriname" CREATE (a)-[:road {distance:444, speed:100, delay:1, price_rate:0.300000, duration:5.440000, price:133.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "guiana" AND b.id = "suriname" CREATE (a)<-[:road {distance:444, speed:100, delay:1, price_rate:0.300000, duration:5.440000, price:133.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "montes_claros" AND b.id = "itamaraju" CREATE (a)-[:road {distance:847, speed:100, delay:1, price_rate:0.300000, duration:9.470000, price:254.100000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "montes_claros" AND b.id = "itamaraju" CREATE (a)<-[:road {distance:847, speed:100, delay:1, price_rate:0.300000, duration:9.470000, price:254.100000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "guiana" AND b.id = "boa_vista" CREATE (a)-[:road {distance:679, speed:100, delay:1, price_rate:0.300000, duration:7.790000, price:203.700000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "guiana" AND b.id = "boa_vista" CREATE (a)<-[:road {distance:679, speed:100, delay:1, price_rate:0.300000, duration:7.790000, price:203.700000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "teresina" CREATE (a)-[:road {distance:604, speed:100, delay:1, price_rate:0.300000, duration:7.040000, price:181.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "fortaleza" AND b.id = "teresina" CREATE (a)<-[:road {distance:604, speed:100, delay:1, price_rate:0.300000, duration:7.040000, price:181.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "aracaju" AND b.id = "salvador" CREATE (a)-[:road {distance:325, speed:100, delay:1, price_rate:0.300000, duration:4.250000, price:97.500000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "aracaju" AND b.id = "salvador" CREATE (a)<-[:road {distance:325, speed:100, delay:1, price_rate:0.300000, duration:4.250000, price:97.500000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_branco" AND b.id = "porto_velho" CREATE (a)-[:road {distance:510, speed:100, delay:1, price_rate:0.300000, duration:6.100000, price:153.000000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "rio_branco" AND b.id = "porto_velho" CREATE (a)<-[:road {distance:510, speed:100, delay:1, price_rate:0.300000, duration:6.100000, price:153.000000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "caico" CREATE (a)-[:road {distance:321, speed:100, delay:1, price_rate:0.300000, duration:4.210000, price:96.300000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "joao_pessoa" AND b.id = "caico" CREATE (a)<-[:road {distance:321, speed:100, delay:1, price_rate:0.300000, duration:4.210000, price:96.300000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "ribeirao_preto" CREATE (a)-[:road {distance:314, speed:100, delay:1, price_rate:0.300000, duration:4.140000, price:94.200000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "sao_paulo" AND b.id = "ribeirao_preto" CREATE (a)<-[:road {distance:314, speed:100, delay:1, price_rate:0.300000, duration:4.140000, price:94.200000}]-(b);
+MATCH (a:City), (b:City) WHERE a.id = "santarem" AND b.id = "itaituba" CREATE (a)-[:road {distance:368, speed:100, delay:1, price_rate:0.300000, duration:4.680000, price:110.400000}]->(b);
+MATCH (a:City), (b:City) WHERE a.id = "santarem" AND b.id = "itaituba" CREATE (a)<-[:road {distance:368, speed:100, delay:1, price_rate:0.300000, duration:4.680000, price:110.400000}]-(b);

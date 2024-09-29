@@ -2,9 +2,15 @@ package http
 
 import (
 	"fmt"
-
 	"github.com/johnfercher/medium-logistic/internal/core/models"
 )
+
+type City struct {
+	ID      string `json:"id"`
+	Name    string `json:"name"`
+	Acronym string `json:"acronym"`
+	Type    string `json:"type"`
+}
 
 type Graph struct {
 	Nodes map[string]*Node `json:"nodes"`
@@ -29,6 +35,10 @@ type Edge struct {
 	Source string `json:"source"`
 	Target string `json:"target"`
 	Label  string `json:"label"`
+	Color  string `json:"color"`
+	Type   string `json:"type"`
+	Dashed bool   `json:"dashed"`
+	Width  int    `json:"width"`
 }
 
 type Path struct {
@@ -59,12 +69,33 @@ func Map(graph *models.GraphView) *Graph {
 	}
 
 	for i, road := range graph.Roads {
-		response.Edges[fmt.Sprintf("edge%d", i)] = &Edge{
+		edge := &Edge{
 			Source: road.Source,
 			Target: road.Target,
-			Label:  fmt.Sprintf("%d Km", road.Distance),
+			Color:  road.Color,
+			Type:   road.Type,
+			Width:  road.Width,
+			Dashed: road.Dashed,
+			Label:  fmt.Sprintf("%.1f %s", road.Weight, road.WeightType.Unit()),
 		}
+
+		response.Edges[fmt.Sprintf("edge%d", i)] = edge
 	}
 
 	return response
+}
+
+func MapCities(entities []*models.City) []*City {
+	var cities []*City
+
+	for _, city := range entities {
+		cities = append(cities, &City{
+			ID:      city.ID,
+			Name:    city.Name,
+			Acronym: city.Acronym,
+			Type:    city.Type,
+		})
+	}
+
+	return cities
 }

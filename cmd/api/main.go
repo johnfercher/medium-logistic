@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"log"
 	"net/http"
 	"os"
@@ -16,6 +17,7 @@ import (
 )
 
 func main() {
+	ctx := context.TODO()
 	cfg, err := config.Load(os.Args)
 	if err != nil {
 		panic(err)
@@ -27,8 +29,14 @@ func main() {
 	}
 
 	repository := neo4j2.NewGraphRepository(driver)
+	repository.InitProjection(ctx)
+
 	graphViewer := services.NewGraphViewer(repository)
-	fullGraphReader := http2.NewFullGraphReader(graphViewer)
+
+	getShortestPath := http2.NewGetShortestPath(graphViewer)
+	searchGraph := http2.NewSearchGraph(graphViewer)
+	listCities := http2.NewListCities(repository)
+	listStates := http2.NewListStates()
 
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
@@ -45,7 +53,10 @@ func main() {
 		MaxAge:           0, // Maximum value not ignored by any of major browsers
 	}))
 
-	r.MethodFunc(fullGraphReader.Method(), fullGraphReader.Pattern(), fullGraphReader.Func)
+	r.MethodFunc(getShortestPath.Method(), getShortestPath.Pattern(), getShortestPath.Func)
+	r.MethodFunc(searchGraph.Method(), searchGraph.Pattern(), searchGraph.Func)
+	r.MethodFunc(listCities.Method(), listCities.Pattern(), listCities.Func)
+	r.MethodFunc(listStates.Method(), listStates.Pattern(), listStates.Func)
 
 	_ = http.ListenAndServe(":8083", r)
 }
